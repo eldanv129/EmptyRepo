@@ -35,7 +35,7 @@ jobs:
        # FUSION_SET_ID:  "dd6b1360-5864-11ee-96fa-bb616f57e574"
 
        # Android
-       APP_FILE: "./LiveOne.aab"
+       APP_FILE: "./com.unikas.nobuepay.wallet-2.1.1-release.apk"
        # KEYSTORE_FILE: "./appdome.keystore"
        # KEYSTORE_PASSWORD: "appdome"
        # KEYSTORE_ALIAS: "appdome"
