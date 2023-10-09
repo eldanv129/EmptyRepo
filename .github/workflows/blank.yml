@@ -50,7 +50,7 @@ jobs:
 
 
        # SECOND_OUTPUT: true
-       OUTPUT_APP_NAME: "test/test_app.apk"
+       OUTPUT_APP_NAME: "./test/test_app.apk"
        # BUILD_TO_TEST: "saucelabs"
        
    - name: Example of using Appdome secured app
