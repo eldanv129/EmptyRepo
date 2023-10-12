@@ -44,7 +44,7 @@ jobs:
        # SIGN_FINGERPRINT: "8DF593C1B6EAA6EADADCE36831FE82B08CAC8D74"
 
        SECOND_OUTPUT: true
-       OUTPUT_APP_NAME: "test/test_app.ipa"
+       OUTPUT_APP_NAME: "test_app.ipa"
        # BUILD_TO_TEST: "saucelabs"
        
    - name: Example of using Appdome secured app
