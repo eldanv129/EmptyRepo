@@ -43,7 +43,7 @@ jobs:
        SIGN_FINGERPRINT: "8DF593C1B6EAA6EADADCE36831FE82B08CAC8D74"
        # GOOGLE-PLAY-SIGNING: true
 
-       # SECOND_OUTPUT: true
+       SECOND_OUTPUT: true
        # BUILD_WITH_LOGS: true
        # OUTPUT_APP_NAME: "test_dir/test_app.ipa"
        # BUILD_TO_TEST: "saucelabs"
