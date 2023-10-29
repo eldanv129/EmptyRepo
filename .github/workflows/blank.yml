@@ -23,7 +23,7 @@ jobs:
      uses: Appdome/github_build-2secure@1.3.4
      with:
        APPDOME_API_TOKEN: ${{secrets.APPDOME_API_KEY}}
-       SIGN_OPTIONS: "PRIVATE_SIGNING"
+       SIGN_OPTIONS: "AUTO_DEV_SIGNING"
 
        # iOS
        # APP_FILE: "./filefinder.ipa"
@@ -41,12 +41,12 @@ jobs:
        KEYSTORE_KEY_PASSWORD: "appdome"
        FUSION_SET_ID:  "d2574330-5856-11ee-800b-a111bd4d22d3"
        SIGN_FINGERPRINT: "8DF593C1B6EAA6EADADCE36831FE82B08CAC8D74"
-       # GOOGLE-PLAY-SIGNING: true
+       GOOGLE-PLAY-SIGNING: true
 
        # SECOND_OUTPUT: true
-       # BUILD_WITH_LOGS: true
-       # OUTPUT_APP_NAME: "test_dir/test_app.ipa"
-       # BUILD_TO_TEST: "saucelabs"
+       BUILD_WITH_LOGS: true
+       OUTPUT_APP_NAME: "test_app.ipa"
+       BUILD_TO_TEST: "saucelabs"
        
    - name: Example of using Appdome secured app
      run: |
