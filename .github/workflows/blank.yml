@@ -49,7 +49,7 @@ jobs:
        # BUILD_WITH_LOGS: true
        OUTPUT_APP_NAME: "test_app.aab"
        # BUILD_TO_TEST: "saucelabs"
-
+       
    - name: Example of using Appdome secured app
      run: |
         echo ${{ env.APPDOME_SECURED_APP }}
