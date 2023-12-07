@@ -23,7 +23,7 @@ jobs:
      uses: Appdome/github_build-2secure@1.4.1.freeze
      with:
        APPDOME_API_TOKEN: ${{secrets.APPDOME_API_KEY}}
-       TEAM-ID: 3221fc60-8304-11ee-bba7-7dbd42a29988
+       TEAM_ID: 3221fc60-8304-11ee-bba7-7dbd42a29988
        SIGN_OPTIONS: "SIGN_ON_APPDOME"
 
        # iOS
