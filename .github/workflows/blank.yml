@@ -37,7 +37,7 @@ jobs:
 
        # Android
        APP_FILE: "./FileFinder.aab"
-       KEYSTORE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/appdome.keystore?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20231207%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231207T081830Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=f507a995c18a240d69132af617d94cf46cfae1a7768557422e45eb1959ff1197"
+       KEYSTORE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/appdome.keystore?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20231207%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231207T095511Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=71570628b5a2c178751b17f3fdf3719e759293d353466dabaffcff359b0b0996"
        KEYSTORE_PASSWORD: "appdome"
        KEYSTORE_ALIAS: "appdome"
        KEYSTORE_KEY_PASSWORD: "appdome"
