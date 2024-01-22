@@ -24,7 +24,7 @@ jobs:
      with:
        APPDOME_API_TOKEN: ${{secrets.APPDOME_API_KEY}}
        TEAM_ID: 3221fc60-8304-11ee-bba7-7dbd42a29988
-       SIGN_OPTIONS: "SIGN_ON_APPDOME"
+       SIGN_OPTIONS: "PRIVATE_SIGNING"
 
        # iOS
        # APP_FILE: "./filefinder.ipa"
@@ -36,18 +36,18 @@ jobs:
 
        # Android
        APP_FILE: "./FileFinder.aab"
-       KEYSTORE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/appdome.keystore?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20231207%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231207T095511Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=71570628b5a2c178751b17f3fdf3719e759293d353466dabaffcff359b0b0996"
-       KEYSTORE_PASSWORD: "appdome"
-       KEYSTORE_ALIAS: "appdome"
-       KEYSTORE_KEY_PASSWORD: "appdome"
+       # KEYSTORE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/appdome.keystore?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20231207%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231207T095511Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=71570628b5a2c178751b17f3fdf3719e759293d353466dabaffcff359b0b0996"
+       # KEYSTORE_PASSWORD: "appdome"
+       # KEYSTORE_ALIAS: "appdome"
+       # KEYSTORE_KEY_PASSWORD: "appdome"
        FUSION_SET_ID:  "f5a6c800-8304-11ee-bba7-7dbd42a29988"
        SIGN_FINGERPRINT: "8DF593C1B6EAA6EADADCE36831FE82B08CAC8D74"
        GOOGLE_PLAY_SIGNING: true
 
-       # SECOND_OUTPUT: true
+       SECOND_OUTPUT: true
        # BUILD_WITH_LOGS: true
        OUTPUT_APP_NAME: "test_app.aab"
-       # BUILD_TO_TEST: "saucelabs"
+       BUILD_TO_TEST: "saucelabs"
 
        
    - name: Example of using Appdome secured app
@@ -56,3 +56,5 @@ jobs:
         echo ${{ env.APPDOME_SECURED_APP_SECOND_OUTPUT }}
         echo $APPDOME_SECURED_APP
         echo $APPDOME_SECURED_APP_SECOND_OUTPUT
+
+    
