@@ -13,7 +13,7 @@ jobs:
  # This workflow contains a single job called "build"
  a:
  # The type of runner that the job will run on
-  runs-on: ubuntu-latest
+  runs-on: macos-13-xlarge
  # Steps represent a sequence of tasks that will be executed as part of the job
   steps:
  # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -24,30 +24,30 @@ jobs:
      with:
        APPDOME_API_TOKEN: ${{secrets.APPDOME_API_KEY}}
        TEAM_ID: 3221fc60-8304-11ee-bba7-7dbd42a29988
-       SIGN_OPTIONS: "PRIVATE_SIGNING"
+       SIGN_OPTIONS: "SIGN_ON_APPDOME"
 
        # iOS
-       # APP_FILE: "./filefinder.ipa"
-       # CERTIFICATE_FILE: "https://appdome-automation-vanilla-apps.s3.eu-central-1.amazonaws.com/Thomas/AutomationCert.p12?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJIMEYCIQD%2BA0JfH2H3jOk7TwP7ZQzMMiTzrYFiWGl7s0ZQBT49mwIhAPRsCdk1SUdfs%2BedQJAqJd8aZ%2FfLTDdcU46RYGdl14EaKo4DCLn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMMzAyMjY3NjU0Mzk0Igwgtnkzl%2BENwAiJEcQq4gJFaOuUYNdr54VPJ0h6xD1iVsA0wlhvTFW%2Fyhc96%2FaRr%2FAay%2Be3KfUd%2BqloVB7qdvyf1pnsVApeUdeTJajILhQ%2FtOiWoVjVKGudZ7%2BgblCGcmQDa%2FKgJCVholdpTocXbU0rJwBiWnBaxN0HmjaHbvmH98C5oMPb%2BoB6fQuDI7%2F57ccofMGfdkCQCWXMwNmWj04hDxKHJX6CR0oxPTdQDsjERp%2Ft0%2FBBbfNlG%2B5klJmcPif3PbSHu7aBYUvN3jxlcQ9A5Uty4lpjbLn9PohReRc8j%2B5gxNLqcS2OT946ouPp7QWxzW7uMpiVZvNC91xMHm8WEg2yiKJENUm4bw8%2BMMfMXrcxVjqQUxkakfKfUir8KTphXZIt2foUo1ysg2OJAOSFffyIlcTLHR6rf9hdyHIduOUhv1lE8XTIVKKyigiQPkq%2BgJct%2FthZINs%2FpbDAoPMTKf7Us2UVS%2FBadsXE5WXjfu4wiZX4qQY6sgJ63v0BlQfYzUBHJqqVXgJnf7J%2FI2fehJYl7g0h%2BH%2BKSaaoLkSdQdvoboz1H92s%2FmcuBJO25eBWjPvN4qvkdOQldwBAKF7lJU17E%2B26IgqKyCADvXWq2jLO53H7KrbwZqswwoN19MrQ0rZ5RGSK6I6tki1XBK%2Bzhv5kQUcYJIE17Nk2TdJlH7nwC3hvqTQ0iUFVjpMIF8jvg9d48IrviQYFrWpKd7ffQXGiaZZRhUu0fzf%2FHMJDop7SDSu0799QcU%2BPMhTGMjvPjepcRyuRmnJb1aqC3UaRbMC3WMOGez2v2%2Bw2cvBA204r3rwlwMSF8o6rRHmt0TTbcXis6ZevcldVRHuDtHz2AUQ5IgTm%2BJzbZaAQLq1VifZlnvlraemtamKXJr1OXViaPfH1lNRWoTW1ea8%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231029T082514Z&X-Amz-SignedHeaders=host&X-Amz-Expires=32400&X-Amz-Credential=ASIAUMYEOMD5NDLYAWHP%2F20231029%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=d534150d50faeb508d1616e43a34afb057f0df378286d2001709ad5b0570ef26"
-       # CERTIFICATE_PASSWORD: "nf1101"
-       # MOBILE_PROVISION_PROFILE_FILE: "./Automation.mobileprovision"
-       # ENTITLEMENTS_FILE: "AutomationEntitlements.plist"
-       # FUSION_SET_ID:  "dd6b1360-5864-11ee-96fa-bb616f57e574"
+       APP_FILE: "./filefinder.ipa"
+       CERTIFICATE_FILE: "https://appdome-automation-vanilla-apps.s3.eu-central-1.amazonaws.com/Thomas/PipelineFiles/Apps/FileFinder.ipa?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmV1LW5vcnRoLTEiRzBFAiEA079IT6KKNvccrwnG7DSrZzUd9AVZd0%2FM7BYWxJ6HK74CIA2hUy1D89IpIt7SDVAp9Ra3nozjvRJLyXysx%2BXUSMgjKooDCND%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMMzAyMjY3NjU0Mzk0IgyVYqpbtWUgSHp%2FzmYq3gIdSd8FO9tIMPXoorkSPSWjpG4AnghxtjN9QvHH6Edyu5xRkZIoU8XV7AbZQhQZmSbAvpB4SHED9FkS50t3j%2BR3LI5NdMrCOgKva81znL9sLea8vIx9Qm8ZMN%2FUVkVLoJDzDPkHvIyToWAyRWMf5mlHQW3gA0JvU5Y27T8OxROSKQ9GdMWj93sP3%2FBBik4gyxoYXx3jK4nGW0J%2FMyuthOlCgLdxjmGqKpwb5Xpf%2FAAPtVkO6UX0uG2ovedKStBXwtQw3nPr4q%2F%2BwUciPULmea1RnVRpRSO5WxmBpoGt2F5whoDa5sedlcmnxjPmzEk0vozhZlRbFh%2FmhAvVnHf7TVsc5aotGk%2F0QRymWy%2F%2FczDlW8XLy%2BKRJMcOf5913UoL2JGAysC5keg9nHZS22h8M%2FzezCdtOA0ODgO4k%2B2QZcvdqkIDAymZ7zu%2BaGkifZSwfTgPVB4vA9j189TQSQSuXTCTgMmwBjqzAn%2BEUV5QcwhhEdUnlARZ%2FvLNW4ESDHKm2uPU0Aipm442z5m0Khvx%2BE%2FtzaE%2BHbVlad9%2FdwPqk7WkGil5vJVIC0ngE6k6k33BVs11ZJaQX7thIFnaPmy64ImqBq7uSfZDX7qzTAL%2Bfk6VNCJ%2BYITWQVUL8kpM1uHFEgYeFWo71Hh4%2F9WnS3SKL3MPTWY84glqHc56rqxJi5fsOTGdKYFCFYy39LQk3fGZjf32ZVsgnBXVcfnZPY5UMMS%2FPQeviLECaRahUCPVqOu5N%2BumyIw5R5F8HJaivGB3%2FFfyCnBsBx2wRDGSgolRQUKxy7t%2FqrD2p9NGUmrAjmgv9Ik%2FEgqo4xBhr5Xx6P0j3DKKXiNsKrFBx5GjqIhSomuLbPpLFh0zB0x3jIUjmKQu1RAi1SOQnfLdnpg%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240407T064201Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIAUMYEOMD5J6WSDY2J%2F20240407%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=16bc0d2e346db6401f75fee967d4f580b1f698979aee132f01e8b943ef26af35"
+       CERTIFICATE_PASSWORD: "nf1101"
+       MOBILE_PROVISION_PROFILE_FILE: "./Automation.mobileprovision"
+       ENTITLEMENTS_FILE: "AutomationEntitlements.plist"
+       FUSION_SET_ID:  "dd6b1360-5864-11ee-96fa-bb616f57e574"
 
        # Android
-       APP_FILE: "./FileFinder.aab"
+       # APP_FILE: "./FileFinder.aab"
        # KEYSTORE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/appdome.keystore?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20231207%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231207T095511Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=71570628b5a2c178751b17f3fdf3719e759293d353466dabaffcff359b0b0996"
        # KEYSTORE_PASSWORD: "appdome"
        # KEYSTORE_ALIAS: "appdome"
        # KEYSTORE_KEY_PASSWORD: "appdome"
-       FUSION_SET_ID:  "f5a6c800-8304-11ee-bba7-7dbd42a29988"
-       SIGN_FINGERPRINT: "8DF593C1B6EAA6EADADCE36831FE82B08CAC8D74"
-       GOOGLE_PLAY_SIGNING: true
+       # FUSION_SET_ID:  "f5a6c800-8304-11ee-bba7-7dbd42a29988"
+       # SIGN_FINGERPRINT: "8DF593C1B6EAA6EADADCE36831FE82B08CAC8D74"
+       # GOOGLE_PLAY_SIGNING: true
 
-       SECOND_OUTPUT: true
+       # SECOND_OUTPUT: true
        # BUILD_WITH_LOGS: true
        OUTPUT_APP_NAME: "test_app.aab"
-       BUILD_TO_TEST: "saucelabs"
+       # BUILD_TO_TEST: "saucelabs"
 
        
    - name: Example of using Appdome secured app
