@@ -27,20 +27,20 @@ jobs:
        SIGN_OPTIONS: "SIGN_ON_APPDOME"
 
        # iOS
-       APP_FILE: "./filefinder.ipa"
-       CERTIFICATE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/AutomationCert.p12?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20240526%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240526T104338Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=e8ebafa45642277f32d77d32cfb7f35471c71916d7bb7ffae0e8a7302621ae29"
-       CERTIFICATE_PASSWORD: "nf1101"
-       MOBILE_PROVISION_PROFILE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/Automation.mobileprovision?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20240526%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240526T104338Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9d9bae325496d398e296d1b22fb7addfc6ba8a78a74e6483ac60492a7544705a"
-       ENTITLEMENTS_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/AutomationEntitlements.plist?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20240526%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240526T104338Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=7c4a126919e44c65267f331f1b93446fbfd82776f0b7ca36b368d2a3ab07d0cc"
-       FUSION_SET_ID:  "dd6b1360-5864-11ee-96fa-bb616f57e574"
+       # APP_FILE: "./filefinder.ipa"
+       # CERTIFICATE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/AutomationCert.p12?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20240526%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240526T104338Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=e8ebafa45642277f32d77d32cfb7f35471c71916d7bb7ffae0e8a7302621ae29"
+       # CERTIFICATE_PASSWORD: "nf1101"
+       # MOBILE_PROVISION_PROFILE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/Automation.mobileprovision?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20240526%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240526T104338Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9d9bae325496d398e296d1b22fb7addfc6ba8a78a74e6483ac60492a7544705a"
+       # ENTITLEMENTS_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/AutomationEntitlements.plist?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20240526%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240526T104338Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=7c4a126919e44c65267f331f1b93446fbfd82776f0b7ca36b368d2a3ab07d0cc"
+       # FUSION_SET_ID:  "dd6b1360-5864-11ee-96fa-bb616f57e574"
 
        # Android
-       # APP_FILE: "./FileFinder.aab"
-       # KEYSTORE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/appdome.keystore?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20231207%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231207T095511Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=71570628b5a2c178751b17f3fdf3719e759293d353466dabaffcff359b0b0996"
-       # KEYSTORE_PASSWORD: "appdome"
-       # KEYSTORE_ALIAS: "appdome"
-       # KEYSTORE_KEY_PASSWORD: "appdome"
-       # FUSION_SET_ID:  "f5a6c800-8304-11ee-bba7-7dbd42a29988"
+       APP_FILE: "./FileFinder.aab"
+       KEYSTORE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/appdome.keystore?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20240526%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240526T104338Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=4245447e2b01bb65f429e1ce798c16bcf1295fd5a42fff2a4551128c20afc0c3"
+       KEYSTORE_PASSWORD: "appdome"
+       KEYSTORE_ALIAS: "appdome"
+       KEYSTORE_KEY_PASSWORD: "appdome"
+       FUSION_SET_ID:  "f5a6c800-8304-11ee-bba7-7dbd42a29988"
        # SIGN_FINGERPRINT: "8DF593C1B6EAA6EADADCE36831FE82B08CAC8D74"
        # GOOGLE_PLAY_SIGNING: true
 
