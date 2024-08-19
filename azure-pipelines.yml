@@ -12,7 +12,7 @@ steps:
     secureFile: 'FileFinder.aab'
   name: app
 
-- task: Build-2Secure@0
+- task: Build-2Secure-test@0
   inputs:
     Platform: 'android'
     Sign: 'privateSigning'
@@ -21,6 +21,7 @@ steps:
     FusionSetId: 'd2574330-5856-11ee-800b-a111bd4d22d3'
     SigningFingerprint: '8DF593C1B6EAA6EADADCE36831FE82B08CAC8D74'
     OutputFileName: "secureduniversal"
+    BuildToTest: 'firebase'
   name: 'buildTask'
 
 - script: |
@@ -37,3 +38,5 @@ steps:
   inputs:
     PathtoPublish: '$(buildTask.AppdomeOutputsDir)'
     ArtifactName: 'Appdome Output1'   
+
+
