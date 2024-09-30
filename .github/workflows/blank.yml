@@ -24,7 +24,7 @@ jobs:
      with:
        APPDOME_API_TOKEN: ${{secrets.APPDOME_API_KEY}}
        TEAM_ID: 3221fc60-8304-11ee-bba7-7dbd42a29988
-       SIGN_OPTIONS: "SIGN_ON_APPDOME"
+       SIGN_OPTIONS: "AUTO_DEV_SIGNING"
 
        # iOS
        # APP_FILE: "./filefinder.ipa"
@@ -36,10 +36,10 @@ jobs:
 
        # Android
        APP_FILE: "./FileFinder.aab"
-       KEYSTORE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/appdome.keystore?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20240930%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240930T083903Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=20dd4d051e5ff05a5763486af658b087389b55f65c017065dd805add11eb7d54"
-       KEYSTORE_PASSWORD: "appdome"
-       KEYSTORE_ALIAS: "appdome"
-       KEYSTORE_KEY_PASSWORD: "appdome"
+       # KEYSTORE_FILE: "https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/appdome.keystore?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20240930%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240930T083903Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=20dd4d051e5ff05a5763486af658b087389b55f65c017065dd805add11eb7d54"
+       # KEYSTORE_PASSWORD: "appdome"
+       # KEYSTORE_ALIAS: "appdome"
+       # KEYSTORE_KEY_PASSWORD: "appdome"
        FUSION_SET_ID:  "f5a6c800-8304-11ee-bba7-7dbd42a29988"
        # SIGN_FINGERPRINT: "8DF593C1B6EAA6EADADCE36831FE82B08CAC8D74"
        GOOGLE_PLAY_SIGN_FINGERPRINT_UPGRADE: "8DF593C1B6EAA6EADADCE36831FE82B08CAC8D75"
