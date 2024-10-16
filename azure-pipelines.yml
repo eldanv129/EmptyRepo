@@ -9,21 +9,20 @@ steps:
 
 - task: DownloadSecureFile@1
   inputs:
-    secureFile: 'FileFinder.aab'
+    secureFile: 'ARandomNumber.ipa'
   name: app
 
-- task: Build-2Secure-test@0
+- task: Build-2Secure@0
   inputs:
-    Platform: 'android'
+    Platform: 'ios'
     Sign: 'signOnAppdome'
     App: '$(app.secureFilePath)'
     Token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzk5MTY5NDAtMWJmZS0xMWVlLWI4NzItOWJkZTg0M2QyYmUyIiwic2FsdCI6IjkyOTI0NjRhLWY4MTUtNDA5Zi05NGJiLTE5MTFjMWZiNTFmMCJ9.D1ywWh1K6pabwdFEJTMyd6BA1nBlIDKMvGEGQG976io'
-    FusionSetId: '7fafc440-1ff8-11ee-a1d0-854aee3efdaf'
-    SigningFingerprint: '8DF593C1B6EAA6EADADCE36831FE82B08CAC8D74'
-    KeystoreFile: 'https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/appdome.keystore?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20241016%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241016T124743Z&X-Amz-Expires=36000&X-Amz-SignedHeaders=host&X-Amz-Signature=78ae2123f7714d29b5daa9e15fe073d4bd7c6fd0625b0acbdc0f2ffe3d4773f8'
-    KeystorePass: "appdome"
-    KeyPass: "appdome"
-    KeystoreAlias: "appdome"
+    FusionSetId: '7eeb3600-295f-11ee-8107-df185da8f11b'
+    CertificateFile: 'https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/AutomationCert.p12?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20241016%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241016T124743Z&X-Amz-Expires=36000&X-Amz-SignedHeaders=host&X-Amz-Signature=da443a14193e6987dbf2c21f929ec0f229f31db062802c5ea0ecf58ac59ad93e'
+    CertificatePass: 'bla1;bla2'
+    Entitlements: 'https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/AutomationEntitlements.plist?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20241016%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241016T124743Z&X-Amz-Expires=36000&X-Amz-SignedHeaders=host&X-Amz-Signature=d5ab85ce7bf418c149f8967a95898f6dbfa6df9a9277f0fbe99a8865ca9de5a2'
+    ProvisioningProfile: 'https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/Automation.mobileprovision?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20241016%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241016T124743Z&X-Amz-Expires=36000&X-Amz-SignedHeaders=host&X-Amz-Signature=67ee76b6ad076a6a3f12c592872538bad1e2d1dd41162c1ea33b198b4ac49bdf'
   name: 'buildTask'
 
 - script: |
