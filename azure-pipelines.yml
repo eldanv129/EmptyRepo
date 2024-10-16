@@ -21,7 +21,7 @@ steps:
     FusionSetId: '7fafc440-1ff8-11ee-a1d0-854aee3efdaf'
     SigningFingerprint: '8DF593C1B6EAA6EADADCE36831FE82B08CAC8D74'
     KeystoreFile: 'https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/appdome.keystore?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20241016%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241016T124743Z&X-Amz-Expires=36000&X-Amz-SignedHeaders=host&X-Amz-Signature=78ae2123f7714d29b5daa9e15fe073d4bd7c6fd0625b0acbdc0f2ffe3d4773f8'
-    KeystorePass: "bla1;bla2"
+    KeystorePass: "appdome"
     KeyPass: "appdome"
     KeystoreAlias: "appdome"
   name: 'buildTask'
