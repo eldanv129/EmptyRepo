@@ -15,7 +15,7 @@ steps:
 - task: Build-2Secure@0
   inputs:
     Platform: 'ios'
-    Sign: 'privateSigning'
+    Sign: 'signOnAppdome'
     App: '$(app.secureFilePath)'
     Token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzk5MTY5NDAtMWJmZS0xMWVlLWI4NzItOWJkZTg0M2QyYmUyIiwic2FsdCI6IjkyOTI0NjRhLWY4MTUtNDA5Zi05NGJiLTE5MTFjMWZiNTFmMCJ9.D1ywWh1K6pabwdFEJTMyd6BA1nBlIDKMvGEGQG976io'
     FusionSetId: '7eeb3600-295f-11ee-8107-df185da8f11b'
@@ -39,5 +39,3 @@ steps:
   inputs:
     PathtoPublish: '$(buildTask.AppdomeOutputsDir)'
     ArtifactName: 'Appdome Output1'   
-
-
