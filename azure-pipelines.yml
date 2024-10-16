@@ -9,19 +9,20 @@ steps:
 
 - task: DownloadSecureFile@1
   inputs:
-    secureFile: 'FileFinder.aab'
+    secureFile: 'ARandomNumber.ipa'
   name: app
 
 - task: Build-2Secure@0
   inputs:
-    Platform: 'android'
+    Platform: 'ios'
     Sign: 'privateSigning'
     App: '$(app.secureFilePath)'
     Token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzk5MTY5NDAtMWJmZS0xMWVlLWI4NzItOWJkZTg0M2QyYmUyIiwic2FsdCI6IjkyOTI0NjRhLWY4MTUtNDA5Zi05NGJiLTE5MTFjMWZiNTFmMCJ9.D1ywWh1K6pabwdFEJTMyd6BA1nBlIDKMvGEGQG976io'
-    FusionSetId: 'd2574330-5856-11ee-800b-a111bd4d22d3'
-    SigningFingerprint: '8DF593C1B6EAA6EADADCE36831FE82B08CAC8D74'
-    OutputFileName: "secureduniversal"
-    BuildToTest: 'firebase'
+    FusionSetId: '7eeb3600-295f-11ee-8107-df185da8f11b'
+    CertificateFile: 'https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/AutomationCert.p12?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20241016%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241016T084315Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=cd9b63b364676086b9c212813dc52dc3fb100d4ab6444004e5eefdf803c4fbba'
+    CertificatePass: 'Gw8x2xyv=<GOGXnu?b'
+    ProvisioningProfile: 'https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/Automation.mobileprovision?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20241016%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241016T084315Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=0bd9f4a1beb40481f1059534b5b0006aa58aea1355dccea54a0a79d19a798d6d'
+    Entitlements: 'https://appdome-automation-vanilla-apps.s3.amazonaws.com/Thomas/PipelineFiles/AutomationEntitlements.plist?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUMYEOMD5CS6O3AWM%2F20241016%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241016T084315Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=23cc6a744f07a934b1708d53f216da1c229b1303a5814b6dd616a117c3c5360b'
   name: 'buildTask'
 
 - script: |
